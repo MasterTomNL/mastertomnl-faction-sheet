@@ -1,6 +1,3 @@
-<link rel="stylesheet" type="text/css"href="../css/dndbeyond-character-sheet.css" />
-<link rel="stylesheet" type="text/css"href="../css/style.css" />
-<link rel="stylesheet" type="text/css"href="../css/mce.css" />
 <form class="{{cssClass}} flexcol" autocomplete="off">
 
     <div class="flex-body sheet-header">
@@ -17,27 +14,27 @@
             <div class="flex-row summary-attributes">
                 <ul class="attributes flexrow">
                     <li class="attribute proficiency">
-                        <h4 class="attribute-name box-title">{{ localize "DND5E.Diplomacy" }}</h4>
+                        <h4 class="attribute-name box-title">{{ localize "Diplomacy" }}</h4>
                         <div class="attribute-value">
-                            {{numberFormat system.attributes.diplomacy decimals=0 sign=true}}
+                            {{numberFormat system.attributes.cha decimals=0 sign=true}}
                         </div>
                     </li>
                     <li class="attribute proficiency">
-                        <h4 class="attribute-name box-title">{{ localize "DND5E.Espionage" }}</h4>
+                        <h4 class="attribute-name box-title">{{ localize "Espionage" }}</h4>
                         <div class="attribute-value">
-                            {{numberFormat system.attributes.espionage decimals=0 sign=true}}
+                            {{numberFormat system.attributes.dex decimals=0 sign=true}}
                         </div>
                     </li>
                     <li class="attribute proficiency">
-                        <h4 class="attribute-name box-title">{{ localize "DND5E.Lore" }}</h4>
+                        <h4 class="attribute-name box-title">{{ localize "Lore" }}</h4>
                         <div class="attribute-value">
-                            {{numberFormat system.attributes.lore decimals=0 sign=true}}
+                            {{numberFormat system.attributes.wis decimals=0 sign=true}}
                         </div>
                     </li>
                     <li class="attribute proficiency">
-                        <h4 class="attribute-name box-title">{{ localize "DND5E.Operations" }}</h4>
+                        <h4 class="attribute-name box-title">{{ localize "Operations" }}</h4>
                         <div class="attribute-value">
-                            {{numberFormat system.attributes.operations decimals=0 sign=true}}
+                            {{numberFormat system.attributes.str decimals=0 sign=true}}
                         </div>
                     </li>
                 </ul>
