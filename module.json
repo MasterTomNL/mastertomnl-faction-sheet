@@ -1,35 +1,28 @@
 {
-  "id": "mastertomnl-faction-sheet",
+  "name": "mastertomnl-faction-sheet",
   "title": "MasterTomNL Faction Sheet for 5E",
   "description": "This module adds an additional actor sheet to display faction related information.",
-  "authors": [
-    {
-      "name": "Tom van der Lek",
-      "flags": {}
-    }
-  ],
+  "authors": [{ "name": "Tom van der Lek" }],
   "compatibility": {
     "minimum": "10",
     "verified": "10.291",
     "maximum": "10"
   },
-  "url": "https://github.com/jopeek/fvtt-dndbeyond-character-sheet",
+  "url": "https://github.com/mastertomnl/mastertomnl-faction-sheet",
   "version": "1",
-  "esmodules": [
-    "/mastertomnl-faction-sheet.js"
+  "esmodules": ["/mastertomnl-faction-sheet.js"],
+  "styles": ["/css/mastertomnl-faction-sheet.css"],
+  "relationships": { "systems": [{ "id": "dnd5e", "type": "system" }] },
+  "packs": [
+    {
+      "type": "Actor",
+      "label": "MasterTomNL Factions",
+      "name": "mastertomnl-factions",
+      "module": "mastertomnl-faction-sheet",
+      "path": "./data/mastertomnl-factions.db",
+      "system": "dnd5e"
+    }
   ],
-  "styles": [
-    "/css/mastertomnl-faction-sheet.css"
-  ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "dnd5e",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
-  },
-  "manifest": "https://raw.githubusercontent.com/jopeek/fvtt-dndbeyond-character-sheet/master/module.json",
-  "download": "https://github.com/jopeek/fvtt-dndbeyond-character-sheet/archive/master.zip"
+  "manifest": "https://raw.githubusercontent.com/mastertomnl/mastertomnl-faction-sheet/master/module.json",
+  "download": "https://github.com/mastertomnl/mastertomnl-faction-sheet/archive/master.zip"
 }
